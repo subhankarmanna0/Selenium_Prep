@@ -19,7 +19,7 @@ public class countTotalLink
 		
 		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));
 		
-		System.out.println("Inside footer: "+footerdriver.findElements(By.tagName("a")).size());
+		//System.out.println("Inside footer: "+footerdriver.findElements(By.tagName("a")).size());
 
 	}
 
