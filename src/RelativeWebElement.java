@@ -18,6 +18,13 @@ public class RelativeWebElement
 		WebElement nameEditBox = driver.findElement(By.cssSelector("[name='name']"));
 		
 		System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
+		
+		WebElement checkBox = driver.findElement(By.cssSelector("[for='exampleCheck1']"));
+		driver.findElement(with(By.tagName("input")).toLeftOf(checkBox)).click();
+		
+		WebElement dateofBirth = driver.findElement(By.cssSelector("[for='dateofBirth']"));
+		driver.findElement(with(By.tagName("input")).below(dateofBirth)).click();
+		
 
 	}
 
